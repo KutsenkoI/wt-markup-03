@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+@import '/css/modern-normalize.css';
+
+/* Переименование переменных */
+:root {
+    --primary-color: #2196F3;
+    --secondary-color: #757575;
+    --white-color: #FFF;
+    --gray-color: #212121;
+    --background-color: #AFB1B8;
+}
+
+/* Общие стили для body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+    color: var(--gray-color);
+}
+
+/* Общие стили для списка ul и кнопки button */
+ul {
+    list-style: none;
+}
+
+button {
+    border: none;
+}
+
+/* Общие стили для заголовков h1 */
+h1 {
+    margin: 0;
+}
+
+/* Стили для header и логотипа */
+.header {
+    display: flex;
+    justify-content: center;
+    flex-basis: 1170px;
+    height: 80px;
+}
+
+.logo {
+    text-decoration: none;
+    color: #000;
+    font-size: 26px;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+}
+
+/* Стили для раздела .about */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 290px;
+}
+
+/* Стили для раздела .headernav */
+.headernav {
+    display: flex;
+    align-items: center;
+    flex-basis: 528px;
+}
+
+/* Стили для раздела .headercont */
+.headercont {
+    display: flex;
+    align-items: center;
+    flex-basis: 333px;
+    justify-content: space-between;
+}
+
+/* Общие стили для header .link */
+header .link {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Стили для основного заголовка main h1 */
+main h1 {
+    color: var(--white-color);
+    font-size: 44px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+/* Стили для m-background и его дочерних элементов */
+.m-background {
+    height: 600px;
+    width: 100%;
+    background-color: #2F303A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.m-background>span {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Стили для .zamovutu */
+.zamovutu {
+    height: 50px;
+    width: 200px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.75);
+}
+
+.zamovutu:hover {
+    background-color: #188CE8;
+}
+
+/* Стили для .centner */
+.centner {
+    height: 251px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Обновленные стили для заголовка h1 */
+h1 {
+    text-align: center;
+    flex-basis: 130px;
+}
+
+/* Общие стили для скрытых элементов .hide */
+.hide {
+    display: none;
+}
+
+/* Стили для .accom */
+.accom {
+    width: 1170px;
+    height: 251px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 1170px;
+}
+
+.accom h3 {
+    text-transform: uppercase;
+    color: var(--gray-color);
+}
+
+.accom>li {
+    height: 251px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 251px;
+}
+
+.accom>li>div {
+    height: 120px;
+    width: 270px;
+    background-color: #F5F4FA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.accom>li>h3 {}
+
+.accom>li>p {}
+
+/* Стили для .worksektion */
+.worksektion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.worksektion h2 {
+    font-weight: 700;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+}
+
+.worksektion img {
+    border-radius: 10px;
+}
+
+/* Стили для .perelikrobit */
+.perelikrobit {
+    display: flex;
+    justify-content: space-between;
+    height: 386px;
+    width: 1170px;
+}
+
+/* Стили для .ourteam */
+.ourteam {
+    background-color: #f5f4fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ourteam>ul {
+    display: flex;
+    width: 1170px;
+    justify-content: space-between;
+}
+
+.ourteam>ul>li {
+    background-color: var(--white-color);
+    box-shadow: 0px 2px 3px 0.5px var(--background-color);
+    height: 428px;
+}
+
+.ourteam h2 {
+    font-weight: 700;
+    font-size: 36px;
+    flex-basis: 90px;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+}
+
+.ourteam .posada {
+    font-size: 16px;
+    color: var(--secondary-color);
+    text-align: center;
+    width: 100%;
+}
+
+/* Стили для .buttonconteiner */
+.buttonconteiner {
+    display: flex;
+}
+
+/* Стили для .namehandle */
+.namehandle {
+    font-weight: 800;
+    color: var(--gray-color);
+    text-align: center;
+    width: 100%;
+}
+
+/* Стили для .button-icon */
+.button-icon {
+    fill: var(--background-color);
+}
+
+/* Стили для .buttonlink */
+.buttonlink {
+    height: 44px;
+    width: 44px;
+    background-color: var(--white-color);
+    border-radius: 40px;
+}
+
+.buttonlink:hover {
+    background-color: var(--primary-color);
+}
+
+.buttonlink:hover .button-icon {
+    fill: var(--white-color);
+}
+
+/* Стили для .footerdiv */
+.footerdiv {
+    width: 100%;
+    background-color: #2F303A;
+}
+
+/* Стили для .footerbutton */
+.footerbutton {
+    height: 50px;
+    width: 200px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.75);
+}
+
+.footerbutton:hover {
+    background-color: #188CE8;
+}
+
+/* Стили для .footerbutscont */
+.footerbutscont {
+    display: flex;
+    padding: 0px;
+    width: 206px;
+    justify-content: space-between;
+}
+
+.footerbutscont>li {}
+
+/* Стили для .allfooter */
+.allfooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 252px;
+    padding: 0;
+    margin: 0;
+}
+
+/* Стили для .flogo */
+.flogo {
+    color: var(--white-color);
+}
+
+/* Стили для .navholder */
+.navholder {
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для .footerholder */
+.footerholder {
+    background-color: #2F303A;
+    height: 50px;
+    width: 385px;
+    border: solid;
+    border-color: var(--secondary-color);
+    border-radius: 4px;
+    border-width: 1px;
+}
+
+/* Стили для .button-iconf */
+.button-iconf {
+    fill: var(--white-color);
+    opacity: 100%;
+}
+
+/* Стили для .footertext */
+.footertext {
+    color: var(--white-color);
+    font-weight: 500;
+    font-size: 14px;
+}
